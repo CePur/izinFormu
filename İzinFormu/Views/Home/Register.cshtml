@@ -1,0 +1,75 @@
+﻿@model User
+
+
+@{
+    Layout = null;
+}
+
+
+<html>
+<head>
+    <link href="/css/login.css" rel="stylesheet">
+    <title>İzin Formu - Kayıt</title>
+    <link rel="shortcut icon" href="logo.ico" />
+    <link href="/css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="login">
+        <div class="container">
+            <div id="login-row" class="row justify-content-md-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form asp-action="Register" class="form" method="post">
+                            <div class="row-xs">
+                                <img src="/images/ArtiSoft.jpg" class="logo">
+                            </div><br />
+
+                            <span> @ViewBag.Hata</span>
+
+                            <div class="row">
+                                <div class="col-4">
+                                    <label asp-for="UserName" style="float:right;"></label>
+                                </div>
+                                <div class="col-8">
+                                    <input style="width:300px" asp-for="UserName" class="form-control">
+                                </div>
+
+                                <span asp-validation-for="UserName" class="text-danger"></span>
+
+
+
+                            </div><br />
+                            <div class="row">
+                                <div class="col-4">
+                                    <label asp-for="Password" style="float:right;"></label>
+                                </div>
+                                <div class="col-8">
+                                    <input style="width:300px" asp-for="Password" class="form-control">
+                                </div>
+
+                                <span asp-validation-for="Password" class="text-danger"></span>
+
+                            </div><br />
+                            <div class="row">
+                                <div class="col">
+
+                                </div>
+                                <div class="col">
+                                    <label>
+                                        <input id="remember-me" name="remember-me" class="form-check-input me-1" type="checkbox" value="">
+                                        Beni Hatırla
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <input type="submit" class="btn btn-primary" value="Kayıt Ol">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

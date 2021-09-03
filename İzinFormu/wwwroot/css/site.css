@@ -1,0 +1,13 @@
+.logo{
+    height: 70px;
+    border-right: 1px solid #000;
+}
+.header{
+    height: 70px;
+    text-align: center;
+}
+@media print {
+    #printButton {
+        display: none;
+        }
+    }

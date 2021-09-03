@@ -1,0 +1,192 @@
+﻿@{
+    Layout = null;
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="vieport" content="width-device-width, initial-scale=1.0" />
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <title>İzin Formu</title>
+    <link rel="shortcut icon" href="logo.ico" />
+    <link href="/css/site.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="text-center g-0 m-5">
+            <div class="row">
+                <div class="col">
+                    <img src="/images/ArtiSoft.jpg" class="logo float-end pe-5" alt="">
+                </div>
+                <div class="col">
+                    <h4 class="header float-start pt-3">YILLIK İZİN FORMU</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 col-lg-2 col-sm-2"></div>
+        <div class="col-md-8 col-lg-8 col-sm-8">
+            <table class="table table-hover table-sm">
+                <thead>
+                    <tr>
+                        <th> İzin İsteminde Bulunan Personelin</th>
+
+                        <th>
+                            <div class="row">
+                                <div class="col-md-12 col-lg-12 col-sm-12 text-end">
+                                    <input type="button" class="btn btn-dark " id="printButton" onclick="window.print()" value="YAZDIR">
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Adı Soyadı</td>
+                        <td>
+                            <input class="form-control" list="datalistOptions1" id="exampleDataList1" placeholder="Yazınız...">
+                            <datalist id="datalistOptions1">
+                                <option value="Buğra Kömürcü"></option>
+                                <option value="Cenk Pürtaş"></option>
+                                <option value="Eyüp Öztürk"></option>
+                                <option value="Halit Rodoplu"></option>
+                                <option value="Oğuzhantuğrul Akçay"></option>
+                                <option value="Ramazan Kurt"></option>
+                                <option value="Savaş Öztürk"></option>
+                                <option value="Uğur Öztekin"></option>
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Görevi</td>
+                        <td>
+                            <input class="form-control" list="datalistOptions2" id="exampleDataList2" placeholder="Yazınız...">
+                            <datalist id="datalistOptions2">
+                                <option value="Front End Developer"></option>
+                                <option value="İş Analisti"></option>
+                                <option value="İş Geliştirme Müdürü"></option>
+                                <option value="Proje Müdürü"></option>
+                                <option value="Proje Yöneticisi"></option>
+                                <option value="Veri Tabanı Uzmanı"></option>
+                                <option value="Yazılım Müdürü"></option>
+                                <option value="Yazılım Geliştirme Uzmanı"></option>
+                                <option value="Yazılım Takım Lideri"></option>
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Geçen Yıldan Devreden İzin Süresi (*)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Bu Yıldan Kalan İzin Süresi</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-2 col-lg-2 col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 col-lg-2 col-sm-2"></div>
+        <div class="col-md-8 col-lg-8 col-sm-8">
+            <table class="table table-hover table-sm">
+                <thead>
+                    <tr>
+                        <th>Kullanılacak İznin</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kullanılacak İzin Türü</td>
+                        <td>
+                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Yazınız...">
+                            <datalist id="datalistOptions">
+                                <option value="Yıllık İzin"></option>
+                                <option value="Mazeret İzni"></option>
+                                <option value="Evlilik İzni"></option>
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form-floating">Süresi (Gün)</td>
+                        <td>
+                            <input class="form-control" type="number" id="duration">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Başlangıç Tarihi</td>
+                        <td>
+                            <input class="form-control" type="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bitiş Tarihi</td>
+                        <td>
+                            <input class="form-control" type="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Göreve Başlayacağı Tarih</td>
+                        <td>
+                            <input class="form-control" type="date" maxlength="8">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Telefon Numarası</td>
+                        <td>
+                            <input class="form-control" type="tel" id="phone" maxlength="10" placeholder="555-555-5555">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>İzin Döneminde Yerine Bakacak Kişinin Adı Soyadı</td>
+                        <td>
+                            <input class="form-control" list="datalistOptions4" id="exampleDataList1" placeholder="Yazınız...">
+                            <datalist id="datalistOptions4">
+                                <option value="Buğra Kömürcü"></option>
+                                <option value="Cenk Pürtaş"></option>
+                                <option value="Eyüp Öztürk"></option>
+                                <option value="Halit Rodoplu"></option>
+                                <option value="Oğuzhantuğrul Akçay"></option>
+                                <option value="Ramazan Kurt"></option>
+                                <option value="Savaş Öztürk"></option>
+                                <option value="Uğur Öztekin"></option>
+                            </datalist>
+                    </tr>
+                    <tr class="table-row">
+                        <td>İmzası</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-2 col-lg-2 col-sm-2"></div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-2 col-lg-2 col-sm-2"></div>
+        <div class="col-md-8 col-lg-8 col-sm-8 border p-4">
+            <h6 class="text-center">ONAY</h6>
+            <p class="text-end">Genel Müdür</p>
+            <p class="text-end">Savaş ÖZTÜRK</p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 col-lg-2 col-sm-2"></div>
+        <div class="col-md-8 col-lg-8 col-sm-8">
+            <span><strong>(*) Yıl içerisinde kullanılmayan izin süresi otomatik olarak ertesi yıla devreder.</strong></span><br>
+            <span><strong>1- Birim yöneticisi ve Genel Müdür onayı olmayan formlar işleme alınmayacaktır.</strong></span><br>
+            <span><strong>2- Farklı tarihleri kapsayan her izin dönemi için ayrı ayrı izin formu kullanılması gerekir.</strong></span>
+        </div>
+        <div class="col-md-2 col-lg-2 col-sm-2"></div>
+    </div>
+
+
+    <script src="/js/bootstrap.js"></script>
+</body>
+</html>
